@@ -1,7 +1,7 @@
 # Snake-Game-with-Hand-Control
-A game which uses hand gestures to change the direction of the snake. 
-https://mysticxsam.github.io/Snake-Game-with-Hand-Control/
-This is a modern twist on the classic Snake game that uses hand gestures for control instead of keyboard input. Let me break down each component and how they work together.
+- A game which uses hand gestures to change the direction of the snake. 
+- https://mysticxsam.github.io/Snake-Game-with-Hand-Control/
+- This is a modern twist on the classic Snake game that uses hand gestures for control instead of keyboard input. Let me break down each component and how they work together.
 
 ## HTML Structure (index.html)
 - Sets up the basic page with a title "AI Snake Game with Hand Control"
