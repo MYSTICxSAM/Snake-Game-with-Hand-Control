@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #2c3e50;
+  color: #ecf0f1;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#gameCanvas {
+  background-color: #34495e;
+  border-radius: 10px;
+  border: 4px solid #3498db;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.camera-container {
+  position: relative;
+  width: 300px;
+  height: 225px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 4px solid #e74c3c;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#webcam {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* This flips the webcam image only */
+}
+
+#handCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* No transform here - hand landmarks will appear normally */
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}

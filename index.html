@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🐍 Snake Game with Hand Control</h1>
+  <div class="game-container">
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div class="camera-container">
+      <video id="webcam" autoplay playsinline></video>
+      <canvas id="handCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="game.js"></script>
+  <script src="handTracking.js"></script>
+</body>
+</html>
